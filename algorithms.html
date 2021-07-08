@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Crop-YieldAI</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='bootstrap.css') }}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <style type="text/css">
+    html{
+      background-image: linear-gradient(to bottom right, #b1f7ba, #e8f0ec);
+    }
+    body{
+      background-color: transparent !important;
+    }
+  </style>
+  <body>
+    <a href="http://localhost:5000/home"><input type="submit" value="Home"></a>
+   <div class="wrapper">
+    <div class="container">
+      <br>
+      <div class="text-center">
+        <img src="{{url_for('static', filename='ml.jpg')}}" width="400" height="300">
+      </div>
+      <br>
+      <h2 class="text-center">Algorithms Used</h2>
+      <br>
+      <h4>Random Forest:</h4>
+      <p>Random Forest is a classifier that contains a number of decision trees on various subsets of the given dataset and takes the average to
+         improve the predictive accuracy of that dataset.Instead of relying on one decision tree, the random forest takes the prediction from each 
+         tree and based on the majority votes of predictions,d it predicts the final output.
+         The greater number of trees in the forest leads to higher accuracy and prevents the problem of overfitting.</p>
+      <p>Random Forest works in two-phase first is to create the random forest by combining N decision tree, and second is to make predictions for
+         each tree created in the first phase.<br>
+         The Working process can be explained in the below steps and diagram:<br>
+         Step-1: Select random K data points from the training set.<br>
+         Step-2: Build the decision trees associated with the selected data points (Subsets).<br>
+         Step-3: Choose the number N for decision trees that you want to build.<br>
+         Step-4: Repeat Step 1 & 2.<br>
+         Step-5: For new data points, find the predictions of each decision tree, and assign the new data points to the category that wins the 
+         majority votes.<br></p>
+         <img src="{{url_for('static', filename='RF.png')}}">
+         <a href="https://www.javatpoint.com/machine-learning-random-forest-algorithm">To learn more refer this..</a>
+
+      <br>
+      <br>
+      <h4>Decision Tree:</h4>
+      <p>Decision Tree algorithm belongs to the family of supervised learning algorithms. Unlike other supervised learning algorithms, the decision 
+        tree algorithm can be used for solving regression and classification problems too.The goal of using a Decision Tree is to create a training
+        model that can use to predict the class or value of the target variable by learning simple decision rules inferred from prior data(training data).
+        In Decision Trees, for predicting a class label for a record we start from the root of the tree. We compare the values of the root attribute
+        with the record’s attribute. On the basis of comparison, we follow the branch corresponding to that value and jump to the next node.
+        Decision trees classify the examples by sorting them down the tree from the root to some leaf/terminal node, with the leaf/terminal node 
+        providing the classification of the example.
+        Each node in the tree acts as a test case for some attribute, and each edge descending from the node corresponds to the possible answers 
+        to the test case. This process is recursive in nature and is repeated for every subtree rooted at the new node.
+      </p>
+      <p>The complete process can be better understood using the below algorithm:<br>
+
+        Step-1: Begin the tree with the root node, says S, which contains the complete dataset.<br>
+        Step-2: Find the best attribute in the dataset using Attribute Selection Measure (ASM).<br>
+        Step-3: Divide the S into subsets that contains possible values for the best attributes.<br>
+        Step-4: Generate the decision tree node, which contains the best attribute.<br>
+        Step-5: Recursively make new decision trees using the subsets of the dataset created in step -3. Continue this process until a stage is 
+        reached where you cannot further classify the nodes and called the final node as a leaf node.<br></p>
+         <img src="{{url_for('static', filename='DT.png')}}">
+         <a href="https://www.javatpoint.com/machine-learning-decision-tree-classification-algorithm">To learn more refer this..</a>
+      <br>
+      <br>
+      <h4>K-Nearest Neighbour:</h4>
+      <p>K-NN algorithm assumes the similarity between the new case/data and available cases and put the new case into the category that is most
+        similar to the available categories.
+        K-NN algorithm stores all the available data and classifies a new data point based on the similarity. This means when new data appears then it can be easily classified into a well suite category by using K- NN algorithm.
+        K-NN algorithm can be used for Regression as well as for Classification but mostly it is used for the Classification problems.
+        K-NN is a non-parametric algorithm, which means it does not make any assumption on underlying data.
+        It is also called a lazy learner algorithm because it does not learn from the training set immediately instead it stores the dataset and at the time of classification, it performs an action on the dataset.
+        KNN algorithm at the training phase just stores the dataset and when it gets new data, then it classifies that data into a category that is much similar to the new data.
+      </p>
+      <p>The K-NN working can be explained on the basis of the below algorithm:<br>
+        Step-1: Select the number K of the neighbors<br>
+        Step-2: Calculate the Euclidean distance of K number of neighbors<br>
+        Step-3: Take the K nearest neighbors as per the calculated Euclidean distance.<br>
+        Step-4: Among these k neighbors, count the number of the data points in each category.<br>
+        Step-5: Assign the new data points to that category for which the number of the neighbor is maximum.<br>
+        Step-6: Our model is ready.<br></p>
+         <img src="{{url_for('static', filename='KNN.png')}}">
+         <a href="https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning">To learn more refer this..</a>
+     <br>
+     <br>
+     <h4>Gaussian Naive Bayes:</h4>
+      <p>Naïve Bayes algorithm is a supervised learning algorithm, which is based on Bayes theorem and used for solving classification problems.
+        It is mainly used in text classification that includes a high-dimensional training dataset.
+        Naïve Bayes Classifier is one of the simple and most effective Classification algorithms which helps in building the fast machine learning
+        models that can make quick predictions.It is a probabilistic classifier, which means it predicts on the basis of the probability of an object.
+        Some popular examples of Naïve Bayes Algorithm are spam filtration, Sentimental analysis, and classifying articles.<br><br>
+        The Naïve Bayes algorithm is comprised of two words Naïve and Bayes, Which can be described as:<br>
+
+        Naïve: It is called Naïve because it assumes that the occurrence of a certain feature is independent of the occurrence of other features.
+         Such as if the fruit is identified on the bases of color, shape, and taste, then red, spherical, and sweet fruit is recognized as an apple.
+          Hence each feature individually contributes to identify that it is an apple without depending on each other.<br>
+        Bayes: It is called Bayes because it depends on the principle of Bayes' Theorem. <br>
+      </p>
+      <p>There are three types of Naive Bayes Model, which are given below:<br>
+
+        Gaussian: The Gaussian model assumes that features follow a normal distribution. This means if predictors take continuous values instead of 
+        discrete, then the model assumes that these values are sampled from the Gaussian distribution.<br>
+        Multinomial: The Multinomial Naïve Bayes classifier is used when the data is multinomial distributed. It is primarily used for document 
+        classification problems, it means a particular document belongs to which category such as Sports, Politics, education, etc.
+        The classifier uses the frequency of words for the predictors.<br>
+        Bernoulli: The Bernoulli classifier works similar to the Multinomial classifier, but the predictor variables are the independent Booleans
+        variables. Such as if a particular word is present or not in a document. This model is also famous for document classification tasks.<br></p>
+         <img src="{{url_for('static', filename='GNB.png')}}">
+         <a href="https://iq.opengenus.org/gaussian-naive-bayes/">To learn more refer this..</a>
+    </div>
+    </div>
+
+
+
+    <script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+  </body>
+</html>

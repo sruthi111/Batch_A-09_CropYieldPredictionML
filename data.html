@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Crop-YieldAI</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='bootstrap.css') }}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <style type="text/css">
+  h2 {
+  letter-spacing: 1px;
+  text-align:center;
+  font-weight: bold;
+  font-size: 45px;
+  font-weight: bold;
+  }
+    html{
+      background-image: linear-gradient(to bottom right, #b1f7ba, #e8f0ec);
+    }
+    body{
+      background-color: transparent !important;
+    }
+  </style>
+  <body>
+    <a href="http://localhost:5000/home"><input type="submit" value="Home"></a>
+   <div class="wrapper">
+    <div class="container">
+      <br>
+      <h2>Exploratory Data Analysis</h2>
+      <br>
+      <div >
+        <h4>DATASET</h4>
+        <p>The dataset consists of 5 attributes and 1,24,970 rows in it. <br>The fields include – district name, season, 
+          yield production, crop name.</p>
+        <img src="{{url_for('static', filename='dataset.png')}}" width="700" height="400"><br><br>
+        <br>
+        <h4>DATA VISUALIZATION:</h4>
+        <p>Data  visualization provides an important suite of tools for gaining a qualitative understanding.<br>
+          For this we have used Matplotlib library. As it is the foundation for many other plotting libraries and plotting support in higher level
+           libraries such as Pandas.<br><br>
+          <h6>Seaborn :</h6> <p>seaborn is a data visualization library in python based on Matplotlib. It has different functions like count-plot, bar-plot, line-plot etc..<br>
+          The count-plot() method is used to show the counts of observations in each categorical bin using bars. <br>The bar-plot() method creates a plot taking a mean per categorical column.
+          </p>
+        <img src="{{url_for('static', filename='E1 (1).png')}}" width="500" height="400"><br><br><br>
+        <img src="{{url_for('static', filename='E1 (2).png')}}" width="500" height="400"><br><br><br>
+        <img src="{{url_for('static', filename='E1 (3).png')}}" width="800" height="400"><br><br><br>
+        <img src="{{url_for('static', filename='E1 (4).png')}}" width="800" height="400"><br><br><br>
+      </div>
+      <br>
+      
+      
+
+
+    <script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+  </body>
+</html>

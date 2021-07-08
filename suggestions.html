@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Crop-YieldAI</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='bootstrap.css') }}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <style type="text/css">
+  h2 {
+  letter-spacing: 1px;
+  text-align:center;
+  font-weight: bold;
+  font-size: 45px;
+  font-weight: bold;
+  }
+    html{
+      background-image: linear-gradient(to bottom right, #b1f7ba, #e8f0ec);
+    }
+    body{
+      background-color: transparent !important;
+    }
+  </style>
+  <body>
+    <a href="http://localhost:5000/home"><input type="submit" value="Home"></a>
+   <div class="wrapper">
+    <div class="container">
+      <br>
+      <h2>Few Suggestions from our side on different crops..</h2>
+      <br>
+      <div>
+        <br>
+        <h4>RICE:</h4>
+        <h6>Grown mostly in Kharif and Rabi Seasons</h6>
+        <img src="{{url_for('static', filename='rice.jpg')}}" width="400" height="300"><br><br><br>
+           <p>* It is the staple food crop of a majority of
+            the people in India. Our country is the second
+            largest producer of rice in the world after China.<br>
+            * It is a kharif crop which requires high
+            temperature, (above 25°C) and high humidity
+            with annual rainfall above 100 cm. <br>* Rice is grown under so diverse soil and climatic conditions that it is said that there is hardly any type of soil in which it can not be grown including alkaline and acidic soils.</p><br><br>
+            <h4>WHEAT:</h4>
+            <h6>Grown mostly in Rabi Season</h6>
+            <img src="{{url_for('static', filename='wheat.jpg')}}" width="400" height="300"><br><br><br>
+               <p> * This is the second most important
+                cereal crop. It is the main food crop, in north
+                and north-western part of the country.<br> * This
+                rabi crop requires a cool growing season and
+                a bright sunshine at the time of ripening.<br> * It
+                requires 50 to 75 cm of annual rainfall evenlydistributed over the growing season.</p><br><br>
+            <h4>MILLETS:</h4><h5>Jowar,Bajra and Ragi</h5>
+             <h6>Grown mostly in Kharif and Rabi Season</h6>
+                   <p>* Jowar, bajra and ragi are the
+                    important millets grown in India. Though,
+                    these are known as coarse grains, they have
+                    very high nutritional value. 
+                    *For example, ragi is very rich in iron, calcium, other micro
+                    nutrients and roughage. </p>
+                    <img src="{{url_for('static', filename='jowar.jpg')}}" width="400" height="300"><br><br><br>
+                    <p><h6>*Jowar:</h6> is the third
+                    most important food crop with respect to area
+                    and production. It is a rain-fed crop mostly
+                    grown in the moist areas which hardly needs
+                    irrigation.<br><br></p>
+                    <img src="{{url_for('static', filename='bajra.jpg')}}" width="400" height="300"><br><br><br>
+                    <p><h6>*Bajra:</h6>Bajra grows well on sandy soils and shallow
+                    black soil.</p>
+                    <img src="{{url_for('static', filename='ragi.jpg')}}" width="400" height="300"><br><br><br>
+                    <p><h6>*Ragi:</h6>Bajra grows well on sandy soils and shallow
+                    black soil.</p>
+                  </p><br><br>
+                  <h4>MAIZE:</h4>
+                  <h6>Grown mostly in Kharif and Rabi Season</h6>
+                  <img src="{{url_for('static', filename='maize.jpg')}}" width="400" height="300"><br><br><br>
+                     <p>* It is a crop which is used both as food
+                      and fodder. <br>*It requires
+                      temperature between 21°C to 27°C and grows
+                      well in old alluvial soil. <br>
+                      * It which requires high
+                      temperature, (above 25°C) and high humidity
+                      with annual rainfall above 100 cm. <br>* Use of modern
+                      inputs such as HYV seeds, fertilisers and irrigation
+                      have contributed to the increasing production of
+                      maize. </p><br><br>   
+                  <h4>PULSES:</h4><h5>Tur(arhar),Urad,Moong</h5>
+                  <h6>Grown mostly in Kharif and Rabi Season and even in Rainy season(Urad)</h6>
+                  <img src="{{url_for('static', filename='tur.jpg')}}" width="400" height="300"><br><br><br>
+                  <img src="{{url_for('static', filename='urad.jpg')}}" width="400" height="300"><br><br><br>
+                  <img src="{{url_for('static', filename='moong.jpg')}}" width="400" height="300"><br><br><br>
+                   <p>* Pulses
+                    need less moisture and survive even in dry
+                    conditions. <br>*Being leguminous crops, all these
+                    crops except arhar help in restoring soil fertility
+                    by fixing nitrogen from the air. Therefore, these
+                    are mostly grown in rotation with other crops.
+                  </p><br><br>
+                  <h4>SUGARCANE:</h4>
+                  <h6>Grown : Whole year</h6>
+                  <img src="{{url_for('static', filename='sugarcane.jpg')}}" width="400" height="300"><br><br><br>
+                     <p>*It is a tropical as well as a
+                      subtropical crop. <br>*It grows well in hot and
+                      humid climate with a temperature of 21°C to
+                      27°C and an annual rainfall between 75cm.
+                      and 100cm. <br>
+                      * . Irrigation is required in the regions
+                      of low rainfall. <br>* It can be grown on a variety of
+                      soils and needs manual labour from sowing to
+                      harvesting. India is the second largest producer
+                      of sugarcane only after Brazil. <br>*It is the main
+                      source of sugar, gur (jaggary), khandsari and
+                      molasses.  </p><br><br>  
+                  <h4>OIL SEEDS:</h4><h5>Groundnut,Coconut,Seasamum,Soyabean,Sunflower</h5>
+                  <h6>Grown mostly in Kharif and Rabi Season and Sunflower is grown Whole year.</h6>
+                  <img src="{{url_for('static', filename='groundnut.jpg')}}" width="400" height="300"><br><br><br>
+                  <img src="{{url_for('static', filename='coconut.jpg')}}" width="400" height="300"><br><br><br>
+                  <img src="{{url_for('static', filename='sesamum.jpg')}}" width="400" height="300"><br><br><br>
+                  <img src="{{url_for('static', filename='soyabean.jpg')}}" width="400" height="300"><br><br><br>
+                  <img src="{{url_for('static', filename='sunflower.jpg')}}" width="400" height="300"><br><br><br>
+                   <p>* Most of these are edible and used
+                    as cooking mediums. However, some of these
+                    are also used as raw material in the production
+                    of soap, cosmetics and ointments.
+                  </p><br><br>
+                  <h4>COTTON:</h4>
+                  <h6>Grown in Kharif and Rabi seasons</h6>
+                  <img src="{{url_for('static', filename='cotton.jpg')}}" width="400" height="300"><br><br><br>
+                     <p>India is believed to be the original
+                      home of the cotton plant. Cotton is one of the
+                      main raw materials for cotton textile industry. <br>
+                      * . Irrigation is required in the regions
+                      of low rainfall. <br>* Cotton grows well in drier
+                      parts of the black cotton soil of the Deccan plateau. <br>*It requires high temperature, light
+                      rainfall or irrigation, 210 frost-free days and
+                      bright sun-shine for its growth. It requires 6 to 8 months to mature. </p><br><br> 
+                  <h4>NIGER SEEDS:</h4>
+                  <h6>Grown in Kharif season</h6>
+                  <img src="{{url_for('static', filename='niger.jpg')}}" width="400" height="300"><br><br><br>
+                     <p>Niger is a minor oilseed crop that is grown predominantly under rainfed conditions. <br>
+                      * Sown under rained situations in kharif and rabi as a sole crop or mixed crop with little millet, finger millet, pearl millet, groundnut or pulse crops in different States. A rainfall of 1000 - 1300 mm is considered as optimum.
+                      <br>* Niger requires moist soil to grow properly. Niger could be raised in wide range of soils from clay loam to sandy loam, sandy and gravel soil.
+                      <br>* It grows well under light black soils or brownish loam with sufficient depth and on well drained heavy soils or rocky laterite soils. It can withstand slight alkalinity and salinity also.
+                      </p><br><br>  
+                   
+      
+      </div>
+      <br>
+      
+      <marquee>
+
+        <a style="color:rgb(13, 167, 13);font-size:40px;" href="https://ncert.nic.in/ncerts/l/jess104.pdf">To learn more refer this..</a>
+        
+        </marquee>
+    
+
+    <script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+  </body>
+</html>
